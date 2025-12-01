@@ -89,7 +89,7 @@ public class Wordle {
     public static boolean isAllGreen(char[] resultRow) {
         for(int i=0;i<5;i++)
             {
-                if(resultRow[i]!='g')
+                if(resultRow[i]!='G')
                     {
                         return false;
                     }
