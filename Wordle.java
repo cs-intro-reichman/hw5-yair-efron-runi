@@ -7,7 +7,8 @@ public class Wordle {
     public static String[] readDictionary(String filename) {
 
         In ob= new In(filename);
-        return ob.readAllStrings();
+        String[] result=ob.readAllStrings();
+        return result;
     }
 
     // Choose a random secret word from the dictionary. 
