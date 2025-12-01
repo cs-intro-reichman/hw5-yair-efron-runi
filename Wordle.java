@@ -15,7 +15,7 @@ public class Wordle {
     // Hint: Pick a random index between 0 and dict.length (not including) using Math.random()
     public static String chooseSecretWord(String[] dict) {
         Random rand = new Random() ;
-        int random = rand.nextInt(result.length);
+        int random = rand.nextInt(dict.length);
 
 		return dict[random];
     }
