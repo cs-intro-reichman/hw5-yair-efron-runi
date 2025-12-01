@@ -15,10 +15,9 @@ public class Wordle {
     // Hint: Pick a random index between 0 and dict.length (not including) using Math.random()
     public static String chooseSecretWord(String[] dict) {
         Random rand = new Random() ;
-        String[] result=readDictionary("dictinoary.txt");
         int random = rand.nextInt(result.length);
 
-		return result[random];
+		return dict[random];
     }
 
     // Simple helper: check if letter c appears anywhere in secret (true), otherwise
